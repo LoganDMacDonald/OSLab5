@@ -13,10 +13,16 @@
 // Add any additional data structures or functions you want here
 // perhaps make a clean bank structure instead of several arrays...
 
+	typedef struct threadArgument{
+		int customerNumber;
+		int resourceArray[];
+	}threadArg;
+
 // Request resources, returns true if successful
-extern bool request_res(int n_customer, int request[]);
+//int n_customer, int request[]
+extern bool request_res(void * a);
 
 // Release resources, returns true if successful
-extern bool release_res(int n_customer, int release[]);
+extern bool release_res(void * a);
 
 #endif /* BANKER_H_ */
