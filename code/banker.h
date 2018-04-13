@@ -13,6 +13,7 @@
 // Add any additional data structures or functions you want here
 // perhaps make a clean bank structure instead of several arrays...
 
+//thread argument struct to be passed to the thread in the form of a null pointer
 	typedef struct threadArgument{
 		int customerNumber;
 		int resourceArray[];
