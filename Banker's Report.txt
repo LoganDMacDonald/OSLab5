@@ -1,0 +1,2 @@
+The Banker's Algorithm is implemented with pthreads and mutex locks.  The system creates a banker thread to run the release_res() method, aquires mutex ml1, and creates a client thread to run the request_res() method.  
+Within request_res() and release_res(), the threads aquire mutex mutexlock, work with the global state arrays, and release mutexlock before returning.
