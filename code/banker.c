@@ -115,7 +115,8 @@ bool request_res(void * a){
 		}
 		else{
 			printf("DENIED: request at %i is greater than the need at %i\n",i,i);
-			return false;
+			retVal = false;
+			break;
 		}
 	}
 	if(retVal == false){
